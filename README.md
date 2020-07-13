@@ -40,7 +40,7 @@ Through a simple drop-down menu you too can find out which RuPaul's Drag Race Qu
 
 ## Wireframes
 
-![Project Ideal display](https://i.imgur.com/a3wSB7V.png)
+[Project Ideal display](https://i.imgur.com/a3wSB7V.png)
 
  #### MVP 
 My Project will include the following MVP:
@@ -70,13 +70,15 @@ Some potential MVP goals include:
 
 ## Priority Matrix
 
-! [Priority Matrix](https://i.imgur.com/bM7TLid.jpg)
+[Priority Matrix](https://i.imgur.com/bM7TLid.jpg)
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
+| Project Approval | H | .5hrs | | |
 | Reaching API & making sure it appends elements | H | 3hrs | | |
+| Linking JS file and CSS file | H | .5hrs | .45hrs | .45hrs |
 | Basic HTML & CSS | M | 2hrs | | |
 | Working on the Drop Down Menu | H | 1.5hrs | | |
 | Assign each choice with a Queen(result) | H | 3hrs | | |
@@ -85,7 +87,7 @@ Some potential MVP goals include:
 | Adding Moon and Rising signs | L | 3hrs| | |
 | Adding reset button | L | 1hrs| | |
 | CSS and Drop Down editing | L | 2hrs| | |
-| Total | N/A | 21.5hrs| | |
+| Total | N/A | 22.5hrs| | |
 
 ## Code Snippet
 
