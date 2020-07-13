@@ -40,7 +40,7 @@ Through a simple drop-down menu you too can find out which RuPaul's Drag Race Qu
 
 ## Wireframes
 
-! [Project Ideal Display] (/Users/Partyandhot/Downloads/astrologicallibrary.png)
+![Project Ideal display](https://i.imgur.com/a3wSB7V.png)
 
  #### MVP 
 My Project will include the following MVP:
@@ -70,7 +70,7 @@ Some potential MVP goals include:
 
 ## Priority Matrix
 
-! [Priority Matrix] (/Users/Partyandhot/Downloads/matrix.jpg)
+! [Priority Matrix](https://i.imgur.com/bM7TLid.jpg)
 
 ## Timeframes
 
