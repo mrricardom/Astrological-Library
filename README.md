@@ -2,76 +2,90 @@
 
 ## Project Name
 
-The name of your project.
+The Astrological Library
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Through a simple drop-down menu you too can find out which RuPaul's Drag Race Queen you are based on your Astrological sign. Impress your friends, family, lovers, etc. as you whip out the name of your cosmic soul drag-sister. A picture, a quote, and a decription of your shared attributes will be displayed. Start your engines, because the Astrological Library is OPEN!  
 
 ## API and Data Sample
-[name](link)
+[All Drag Queens API](https://drag-race-api.readme.io/docs/get-all-queens)
 
 ```json
-
-
-
-
-
+ {
+        "id": 57,
+        "name": "Ivy Winters",
+        "winner": false,
+        "missCongeniality": true,
+        "image_url": "http://www.nokeynoshade.party/images/ivy-winters.jpg",
+        "quote": "Hey ladies! Oh my god!"
+    },
+    {
+        "id": 58,
+        "name": "Alyssa Edwards",
+        "winner": false,
+        "missCongeniality": false,
+        "image_url": "http://www.nokeynoshade.party/images/alyssa-edwards.jpg",
+        "quote": "BACKROLLS?!?!"
+    },
+    {
+        "id": 59,
+        "name": "Coco Montrese",
+        "winner": false,
+        "missCongeniality": false,
+        "image_url": "http://www.nokeynoshade.party/images/coco-montrese.jpg",
+        "quote": "I'm not joking bitch!"
+    }
 ```
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+! [Project Ideal Display] (/Users/Partyandhot/Downloads/astrologicallibrary.png)
 
-### MVP/PostMVP
+ #### MVP 
+My Project will include the following MVP:
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+- A fully functional Drop Down Menu
+- Every click will result in an assigned Drag Queen based on your astrological sign
+- A quote, a picture of the Queen, and a quote will appear after each choice
 
-#### MVP 
-*These are examples only. Replace with your own MVP features.*
-
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
-
-- Add second API
-- Use local storage to save user favorites
+Some potential MVP goals include:
+- After each option, the cache will clear allowing the user to insert a new horoscope sign
+- Add a function of choosing Moon and Rising signs
+- Add additional CSS to the Drop Down Menu 
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
+|July 13| Attach the API and make sure that elements are appended to the DOM; Create basic HTMl and CSS Frame | Incomplete
+|July 14| Major coding day - making sure all of the body is created | Incomplete
+|July 15| MVP | Incomplete
+|July 16| Final CSS touches and PMVP | Incomplete
 |July 17| Presentations | Incomplete
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+! [Priority Matrix] (/Users/Partyandhot/Downloads/matrix.jpg)
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Reaching API & making sure it appends elements | H | 3hrs | | |
+| Basic HTML & CSS | M | 2hrs | | |
+| Working on the Drop Down Menu | H | 1.5hrs | | |
+| Assign each choice with a Queen(result) | H | 3hrs | | |
+| Make sure the image, quote, and name is displayed with flexbox | H | 3hrs | | |
+| Work on background image, and GIF and other CSS | H | 3hrs | | |
+| Adding Moon and Rising signs | L | 3hrs| | |
+| Adding reset button | L | 1hrs| | |
+| CSS and Drop Down editing | L | 2hrs| | |
+| Total | N/A | 21.5hrs| | |
 
 ## Code Snippet
 
