@@ -51,7 +51,7 @@ My Project will include the following MVP:
 
 
 #### PostMVP  
-Some potential MVP goals include:
+Some potential PostMVP goals include:
 - After each option, the cache will clear allowing the user to insert a new horoscope sign
 - Add a function of choosing Moon and Rising signs
 - Add additional CSS to the Drop Down Menu 
