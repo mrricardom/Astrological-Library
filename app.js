@@ -17,7 +17,7 @@ const getDragQueen = async () => {
     const aquariusQ = response.data[99]
     const piscesQ = response.data[58]
 
-    dragQueenInfo(taurusQ)
+    dragQueenInfo(piscesQ)
 
   }
   catch (error) {
@@ -49,8 +49,22 @@ const dragQueenInfo = (queen) => {
   const starText = document.createElement('p')
   starText.innerText = 'you are a ram'
   document.querySelector('#enter-info-here').append(starText)
+
+}
+const buttonClick = document.querySelector('form')
+buttonClick.addEventListener('submit', value)
+
+
+function value(e) {
+  e.preventDefault()
+  const astroValue = document.querySelector('#cosmic-choices').value
+  console.log(astroValue)
 }
 
-(e) => {
-  e.preventDefault()
+
+function removeChoice() {
+  const oldChoice = document.querySelector('#enter-info-here')
+  while (oldChoice.lastChild) {
+    oldChoice.removeChild(oldChoice.lastChild)
+  }
 }
