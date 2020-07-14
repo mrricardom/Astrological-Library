@@ -62,7 +62,7 @@ Some potential MVP goals include:
 |---|---| ---|
 |July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |July 13| Project Approval | Complete
-|July 13| Attach the API and make sure that elements are appended to the DOM; Create basic HTMl and CSS Frame | Incomplete
+|July 13| Attach the API and make sure that elements are appended to the DOM; Create basic HTMl and CSS Frame | Complete
 |July 14| Major coding day - making sure all of the body is created | Incomplete
 |July 15| MVP | Incomplete
 |July 16| Final CSS touches and PMVP | Incomplete
@@ -78,10 +78,10 @@ Some potential MVP goals include:
 | --- | :---: |  :---: | :---: | :---: |
 | Project Approval | H | .5hrs | .5hrs | .5hrs |
 | API Research, reaching API, checking it is functional | H | 2hrs | 2.5hrs | 2.5hrs |
-| Making sure API elements append to HTML | H | 3hrs | | |
+| Making sure API elements append to HTML | H | 3hrs | 3.5 hrs | 3.5hrs |
 | Linking JS file and CSS file | H | .5hrs | .45hrs | .45hrs |
 | Basic HTML & CSS | M | 2hrs | | |
-| Dropdown Rearch | M | .5hrs | | |
+| Dropdown Research | M | .5hrs | | |
 | Working on the Dropdown Menu | H | 1.5hrs | | |
 | Assign each choice with a Queen(result) | H | 3hrs | | |
 | HTML shared astrological traits | H | 2hrs | | |
