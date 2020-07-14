@@ -77,7 +77,7 @@ Some potential MVP goals include:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Project Approval | H | .5hrs | .5hrs | .5hrs |
-| API Research, reaching API, checking it is functional | H | 3hrs | | |
+| API Research, reaching API, checking it is functional | H | 2hrs | 2.5hrs | 2.5hrs |
 | Making sure API elements append to HTML | H | 3hrs | | |
 | Linking JS file and CSS file | H | .5hrs | .45hrs | .45hrs |
 | Basic HTML & CSS | M | 2hrs | | |
