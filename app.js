@@ -2,24 +2,13 @@ const url = 'http://www.nokeynoshade.party/api/queens/all'
 
 const getDragQueen = async () => {
   try {
-    const response = await axios.get(url)
-    const select = document.querySelector('#cosmic-choices')
-    const selectedOption = select.selectedOptions[0]
+    const response = await axios.get(url) //getting the data pull
+    const select = document.querySelector('#cosmic-choices')// going into the html and grabbing all select options under class cosmic-choices
+    const selectedOption = select.selectedOptions[0]// once grabbed, using selectedOptions property to choose the selected options in the dropdown menu, in this case the first and only selected option
     console.log(selectedOption.dataset)
-    const queenIndex = selectedOption.dataset.index
-    const queen = response.data[queenIndex]
-    // const ariesQ = response.data[30]
-    // const taurusQ = response.data[109]
-    // const geminiQ = response.data[106]
-    // const cancerQ = response.data[73]
-    // const leoQ = response.data[54]
-    // const virgoQ = response.data[31]
-    // const libraQ = response.data[111]
-    // const scorpioQ = response.data[139]
-    // const sagittariusQ = response.data[82]
-    // const capricornQ = response.data[44]
-    // const aquariusQ = response.data[99]
-    // const piscesQ = response.data[54]
+    const queenIndex = selectedOption.dataset.index // here I used data-index in html to assign it an index number; when you put data infront of it you can use the dataset property. Here i am grabbing the assigned number
+    const queen = response.data[queenIndex]// here i'm calling the datapull, clicking into the data property, and then using the assigned number out of queenIndex
+
     removeChoice()
     dragQueenInfo(queen)
 
