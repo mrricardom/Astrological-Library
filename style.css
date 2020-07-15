@@ -1,4 +1,57 @@
 * {
   background-color:	#FF69B4;
   text-align: center;
+  color: #fff;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url(https://i.imgur.com/5JAVAok.png);
+  background-repeat: cover;
+  width: 100%;
+  
+}
+
+p {
+  background: none;
+  display: block;
+  font-size: 20px;
+}
+
+#form {
+  background-image: url(https://i.imgur.com/5JAVAok.png);
+  background-position: -40px 22px;
+  display: flex;
+  justify-content: left;
+  flex-direction: row-reverse;
+    
+}
+
+h1 {
+  font-family: 'Limelight', cursive;
+  background: none
+}
+
+h3 {
+  background: none;
+}
+
+header {
+  font-size: 2em;
+  background-image: url(https://i.imgur.com/5JAVAok.png);
+  background-repeat: repeat;
+}
+
+#enter-info-here {
+  background-image: url(https://i.imgur.com/5JAVAok.png);
+  background-repeat: cover;
+}
+
+#enter-info-here p {
+  padding-bottom: 0;
+  margin-bottom: 0em;
+}
+
+* background-image {
+  background-position: fixed;
 }

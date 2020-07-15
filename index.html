@@ -7,13 +7,16 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="app.js" defer></script>
   <title>The Astrological Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <h1>The Astrological Library</h1>
-  <p>Hello Racers! Have you ever been on a long, dragging, Zoom call and caught yourself thinking about which RuPaul's
+  <header>
+    <h1>The Astrological Library</h1>
+  </header>
+  <p id="flavor-text">Hello Racers! Have you ever been on a long, dragging, Zoom call and caught yourself thinking about
+    which RuPaul's
     Drag
     Race Queen you were based on your Horoscope? Think no more! Through a simple drop-down menu you too can find out
     which RuPaul's Drag Race Queen is your astro-match. Impress your friends, family, lovers, prison
@@ -21,25 +24,25 @@
     shared attributes will be displayed once you choose a sign and click the button. Start your engines, because the
     Astrological Library is OPEN!</p>
   <img src='https://i.imgur.com/s8WQ1Tq.gif' href='https://i.imgur.com/s8WQ1Tq.gif'>
-  <form>
+  <form id="form">
     <div class="dropdown">
-      <button id="cosmic-button"> Click to choose your Astrological Sign</button>
       <select id="cosmic-choices">
-
-        <option>Aries (March 21 - April 19)</option>
-        <option>Taurus (April 20 - May 20)</option>
-        <option>Gemini (May 21 - June 20)</option>
-        <option>Cancer (June 21 - July 22)</option>
-        <option>Leo (July 23 - August 22)</option>
-        <option>Virgo (August 23 - September 22)</option>
-        <option>Libra (September 23 - October 22)</option>
-        <option>Scorpio (October 23 - November 21)</option>
-        <option>Sagittarius (November 22 - December 21)</option>
-        <option>Capricorn (December 22 - January 19)</option>
-        <option>Aquarius (January 20 - February 18)</option>
-        <option>Pisces (February 19 - March 20)</option>
+        <option>~Choose your sign here~</option>
+        <option data-index="30">Aries (March 21 - April 19)</option>
+        <option data-index="109">Taurus (April 20 - May 20)</option>
+        <option data-index="106">Gemini (May 21 - June 20)</option>
+        <option data-index="73">Cancer (June 21 - July 22)</option>
+        <option data-index="54">Leo (July 23 - August 22)</option>
+        <option data-index="31">Virgo (August 23 - September 22)</option>
+        <option data-index="111">Libra (September 23 - October 22)</option>
+        <option data-index="139">Scorpio (October 23 - November 21)</option>
+        <option data-index="82">Sagittarius (November 22 - December 21)</option>
+        <option data-index="44">Capricorn (December 22 - January 19)</option>
+        <option data-index="99">Aquarius (January 20 - February 18)</option>
+        <option data-index="58">Pisces (February 19 - March 20)</option>
 
       </select>
+      <button id="cosmic-button"> Click to choose your Astrological Sign</button>
     </div>
   </form>
   <div id='enter-info-here'></div>

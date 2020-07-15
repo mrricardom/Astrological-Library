@@ -3,21 +3,25 @@ const url = 'http://www.nokeynoshade.party/api/queens/all'
 const getDragQueen = async () => {
   try {
     const response = await axios.get(url)
-
-    const ariesQ = response.data[30]
-    const taurusQ = response.data[109]
-    const geminiQ = response.data[106]
-    const cancerQ = response.data[73]
-    const leoQ = response.data[54]
-    const virgoQ = response.data[31]
-    const libraQ = response.data[111]
-    const scorpioQ = response.data[139]
-    const sagittariusQ = response.data[82]
-    const capricornQ = response.data[44]
-    const aquariusQ = response.data[99]
-    const piscesQ = response.data[58]
-
-    dragQueenInfo(piscesQ)
+    const select = document.querySelector('#cosmic-choices')
+    const selectedOption = select.selectedOptions[0]
+    console.log(selectedOption.dataset)
+    const queenIndex = selectedOption.dataset.index
+    const queen = response.data[queenIndex]
+    // const ariesQ = response.data[30]
+    // const taurusQ = response.data[109]
+    // const geminiQ = response.data[106]
+    // const cancerQ = response.data[73]
+    // const leoQ = response.data[54]
+    // const virgoQ = response.data[31]
+    // const libraQ = response.data[111]
+    // const scorpioQ = response.data[139]
+    // const sagittariusQ = response.data[82]
+    // const capricornQ = response.data[44]
+    // const aquariusQ = response.data[99]
+    // const piscesQ = response.data[54]
+    removeChoice()
+    dragQueenInfo(queen)
 
   }
   catch (error) {
@@ -50,15 +54,20 @@ const dragQueenInfo = (queen) => {
   starText.innerText = 'you are a ram'
   document.querySelector('#enter-info-here').append(starText)
 
+
 }
+
 const buttonClick = document.querySelector('form')
 buttonClick.addEventListener('submit', value)
 
+const result = buttonClick
+result.addEventListener('focus', getDragQueen)
 
 function value(e) {
   e.preventDefault()
   const astroValue = document.querySelector('#cosmic-choices').value
   console.log(astroValue)
+  getDragQueen(astroValue)
 }
 
 
