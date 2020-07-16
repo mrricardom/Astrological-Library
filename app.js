@@ -43,8 +43,8 @@ const dragQueenInfo = (queen, queenIndex) => {
 
   const img = document.createElement('img')
   img.setAttribute('src', image)
-  img.style.width = '250px'
-  img.style.height = '300px'
+  // img.style.width = '250px'
+  // img.style.height = '300px'
   document.querySelector('#enter-info-here').append(img)
 
   const youAre = document.createElement('h1')
