@@ -7,26 +7,26 @@
 
 header {
   font-size: 2em;
-  background-image: url(https://i.imgur.com/5JAVAok.png);
-  background-repeat: repeat;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  background: none;
 }
 
 #flavor-text {
-  max-width: 900px;
+  max-width: 500px;
   text-align: justify;
 }
 
 body {
   background-image: url(https://i.imgur.com/5JAVAok.png);
-  background-repeat: cover;
-  width: 100%;
-  height: 100%;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 #ru-gif {
-  width: 500px;
-  height: 300px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -41,7 +41,26 @@ p {
   background: none;
   display: flex;
   flex-direction: row;
-  
+  cursor: pointer;
+  justify-content: center;
+  height: 30px;
+  margin: 0;
+}
+div.drop-down {
+  background: none;
+}
+
+#cosmic-button {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+#cosmic-choices {
+  cursor: pointer;
+  font-size: 15px;
+  background: none;
+  margin-right: 0;
+  background-color: #FF69B4;
 }
 
 h1 {
@@ -55,48 +74,252 @@ h3 {
 
 #enter-info-here {
   background: none;
-  max-width: 900px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
 }
 
 #enter-info-here p{
   padding-bottom: 0;
-  max-width: 900px;
-  margin-top: 30px;
+  max-width: 500px;
+  margin-top: 20px;
   text-align: justify;
 }
 #enter-info-here h3{
   padding-bottom: 0;
-  max-width: 900px;
+  max-width: 500px;
+  margin-top: 20px;
   display: inline-block;
   text-align: justify;
-  margin-top: 30px;
 }
+
 #enter-info-here img {
   padding-bottom: 0;
-  max-width: 900px;
+  max-width: 500px;
   display: inline-block;
   margin: 20px auto ;
 }
+
 #enter-info-here h1 {
   padding-bottom: 0;
   display: inline-block;
-  max-width: 900px;
+  max-width: 500px;
 }
 
 footer {
   background:none;
-  background-repeat: repeat;
-  font-size: 12px;
-  max-width: 900px;
-  margin-top: 80px;
+  font-size: 10px;
+  max-width: 100vh;
+  margin-top: 50px;
   text-align: justify;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 
-* background-image {
-  background-position: fixed;
+
+@media all and (max-width: 480px) {
+  * {
+  background-color:	#FF69B4;
+  text-align: center;
+  color: #fff;
+
+}
 }
 
-/* media  */
+body {
+  background-image: url(https://i.imgur.com/5JAVAok.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+#ru-gif {
+  height: 75%;
+  width: 75%;
+}
+
+p{
+font-size: 14px ;
+}
+
+footer {
+  font-size: 8px;
+  max-width: 75vh;
+}
+
+  @media all and (max-width: 1024px) {
+    * {
+      background-color:	#FF69B4;
+      text-align: center;
+      color: #fff;
+      margin: 0 auto;
+    }
+    
+    header {
+      font-size: 2em;
+      padding-top: 30px;
+      margin-bottom: 20px;
+      background: none;
+    }
+    
+    #flavor-text {
+      max-width: 800px;
+      text-align: justify;
+    }
+    
+    body {
+      background-image: url(https://i.imgur.com/5JAVAok.png);
+      background-repeat: repeat;
+      background-position: center;
+      background-size: contain;
+      min-width: 100vw;
+      min-height: 100vh;
+    }
+    
+    #ru-gif {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    
+    p {
+      background: none;
+      display: block;
+      font-size: 20px;
+    }
+    
+    #form {
+      background: none;
+      display: flex;
+      flex-direction:row;
+      cursor: pointer;
+      justify-content: center;
+      height: 30px;
+      margin: 0;
+    }
+    div.drop-down {
+      background: none;
+    }
+    
+    #cosmic-button {
+      font-size: 15px;
+      margin-left: 5px;
+    }
+    
+    #cosmic-choices {
+      cursor: pointer;
+      font-size: 15px;
+      background: none;
+      margin-right: 0;
+      background-color: #FF69B4;
+    }
+    
+    h1 {
+      font-family: 'Limelight', cursive;
+      background: none
+    }
+    
+    h3 {
+      background: none;
+    }
+    
+    #enter-info-here {
+      background: none;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #enter-info-here p{
+      padding-bottom: 0;
+      max-width: 800px;
+      margin-top: 20px;
+      text-align: justify;
+    }
+    #enter-info-here h3{
+      padding-bottom: 0;
+      max-width: 800px;
+      margin-top: 20px;
+      display: inline-block;
+      text-align: justify;
+    }
+    
+    #enter-info-here img {
+      padding-bottom: 0;
+      max-width: 800px;
+      display: inline-block;
+      margin: 20px auto ;
+    }
+    
+    #enter-info-here h1 {
+      padding-bottom: 0;
+      display: inline-block;
+      max-width: 800px;
+    }
+    
+    footer {
+      background:none;
+      font-size: 1em;
+      max-width: 800px;
+      margin-top: 50px;
+      text-align: justify;
+      padding-bottom: 20px;
+    }
+
+  }
+  @media all and (min-width: 1024px) {
+  * {
+    margin: 0 auto;
+  }
+
+  #ru-gif {
+   width: 65%;
+   height: 65%;
+  }
+  #enter-info-here {
+    background: none;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  p, h3 {
+    font-size: 2em;
+    max-width: 1000px;
+  }
+
+  #flavor-text {
+    max-width: 1000px;
+  }
+  #enter-info-here {
+    max-width: 1000px;
+  }
+  #enter-info-here p{
+    padding-bottom: 0;
+    max-width: 1000px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  #enter-info-here h3{
+    padding-bottom: 0;
+    max-width: 1000px;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: justify;
+  }
+  
+  #enter-info-here img {
+    padding-bottom: 0;
+    max-width: 1000px;
+    height: 400px ;
+    width: 400px;
+    display: inline-block;
+    margin: 20px auto ;
+  }
+  footer {
+    max-width: 1000px;
+    font-size: 20px;
+  }
+}
