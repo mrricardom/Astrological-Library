@@ -95,7 +95,7 @@ Some potential PostMVP goals include:
 | MediaQuery instalation | H | 3hrs | 4hrs | 4hrs |
 | Word filter | L | 1hr | .5hrs | .5hrs |
 
-| Total | N/A | 30.5hrs| | |
+| Total | N/A | 32.5hrs| 35.45hrs | 35.45hrs|
 
 ## Code Snippet
 
