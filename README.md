@@ -65,7 +65,7 @@ Some potential PostMVP goals include:
 |July 13| Attach the API and make sure that elements are appended to the DOM; Create basic HTMl and CSS Frame | Complete
 |July 14| Major coding day - making sure all of the body is created | Complete
 |July 15| MVP | Complete
-|July 16| Final CSS touches and PMVP | Incomplete
+|July 16| Final CSS touches and PMVP | Complete
 |July 17| Presentations | Incomplete
 
 ## Priority Matrix
@@ -80,19 +80,20 @@ Some potential PostMVP goals include:
 | API Research, reaching API, checking it is functional | H | 2hrs | 2.5hrs | 2.5hrs |
 | Making sure API elements append to HTML | H | 3hrs | 3.5 hrs | 3.5hrs |
 | Linking JS file and CSS file | H | .5hrs | .45hrs | .45hrs |
-| Basic HTML & CSS | M | 2hrs | | |
-| Dropdown Research | M | .5hrs | | |
-| Working on the Dropdown Menu | H | 1.5hrs | | |
-| Assign each choice with a Queen(result) | H | 3hrs | | |
-| HTML shared astrological traits | H | 2hrs | | |
-| Make sure the image, quote, and name is displayed with flexbox | H | 3hrs | | |
-| Work on background image, and GIF and other CSS | H | 3hrs | | |
-| Adding Moon and Rising signs | L | 3hrs| | |
-| Adding reset button | L | 1hr| | |
-| CSS and Dropdown editing | L | 2hrs| | |
-| General Debugging | H | 1hr | | |
-| Footer | H | .5hrs | | |
-| Word filter | L | 1hr | | |
+| Basic HTML & CSS | M | 2hrs | 1.5 hrs | 1.5hrs |
+| Dropdown Research | M | .5hrs | 1hr | 1hr |
+| Working on the Dropdown Menu | H | 1.5hrs | 1hr | 1hr |
+| Assign each choice with a Queen(result) | H | 3hrs | 3hrs | 3hrs |
+| HTML shared astrological traits | H | 2hrs | 3.5hrs | 3.5hrs |
+| Make sure the image, quote, and name is displayed with flexbox | H | 3hrs | 3.5hrs | 3.5hrs |
+| Work on background image, and GIF and other CSS | H | 3hrs | 3hrs | 3hrs |
+| Adding Moon and Rising signs | L | 3hrs| N/A | N/A |
+| Adding reset function | L | 1hr| .5hrs | .5hrs |
+| CSS and Dropdown editing | L | 2hrs| 3hrs | 3hrs |
+| General Debugging | H | 1hr | 3hrs | 3hrs |
+| Footer | H | .5hrs | 1hr | 1hr |
+| MediaQuery instalation | H | 3hrs | 4hrs | 4hrs |
+| Word filter | L | 1hr | .5hrs | .5hrs |
 
 | Total | N/A | 30.5hrs| | |
 
@@ -100,11 +101,24 @@ Some potential PostMVP goals include:
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
+const getDragQueen = async () => {
+  try {
+    const response = await axios.get(url) //getting the data pull
+    const select = document.querySelector('#cosmic-choices')// going into the html and grabbing all select options under class cosmic-choices
+    const selectedOption = select.selectedOptions[0]// once grabbed, using selectedOptions property to choose the selected options in the dropdown menu, in this case the first and only selected option
+    console.log(selectedOption.dataset)
+    const queenIndex = selectedOption.dataset.index // here I used data-index in html to assign it an index number; when you put data infront of it you can use the dataset property. Here i am grabbing the assigned number
+    const queen = response.data[queenIndex]// here i'm calling the datapull, clicking into the data property, and then using the assigned number out of queenIndex
+
+    removeChoice()
+    dragQueenInfo(queen, queenIndex)
+
+  }
+  catch (error) {
+    console.log(`Your error is ${error}`)
+  }
 }
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+I orginally had the Queen's image displaying left and the information to the right of it in column order after the clicking of the drop-down. After some design choices were made, I decided to do it all as a flexbox column. It was more visually enticing. I originally had the gif of RuPaul above the descriptive text, however, the gif looked better above the drop-down menu. After playing around with my code and javascript, I found it very difficult to have 3 seperate functions running at once so I scrapped the ideal of adding the moon and rising signs.
