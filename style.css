@@ -246,6 +246,7 @@ footer {
   margin: 20px auto ;
 }
 }
+
 /* Media before width of 1024px */
   @media all and (max-width: 1024px) {
     * {
@@ -373,7 +374,7 @@ footer {
     }
 
   
-  /* Media after 1024 */
+  /* Media after 1024px */
   @media all and (min-width: 1024px) {
   * {
     margin: 0 auto;

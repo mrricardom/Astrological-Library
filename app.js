@@ -40,11 +40,8 @@ const dragQueenInfo = (queen, queenIndex) => {
   const quote = queen.quote
   const flavorText = starQuotes[queenIndex]
 
-
   const img = document.createElement('img')
   img.setAttribute('src', image)
-  // img.style.width = '250px'
-  // img.style.height = '300px'
   document.querySelector('#enter-info-here').append(img)
 
   const youAre = document.createElement('h1')
@@ -52,13 +49,13 @@ const dragQueenInfo = (queen, queenIndex) => {
   document.querySelector('#enter-info-here').append(youAre)
 
   const cosmicQuote = document.createElement('h3')
-  cosmicQuote.innerText = `Your Cosmic Quote: "${quote}"`
+  cosmicQuote.innerText = `Your Cosmic Quote: "${quote.replace("fucking", "f***ing")}"`
   document.querySelector('#enter-info-here').append(cosmicQuote)
+
 
   const starText = document.createElement('p')
   starText.innerText = 'Shared Attributes: ' + flavorText
   document.querySelector('#enter-info-here').append(starText)
-
 
 }
 
