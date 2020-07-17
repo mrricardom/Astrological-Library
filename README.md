@@ -99,7 +99,6 @@ Some potential PostMVP goals include:
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
 const getDragQueen = async () => {
   try {
@@ -118,6 +117,12 @@ const getDragQueen = async () => {
     console.log(`Your error is ${error}`)
   }
 }
+
+const dragQueenInfo = (queen, queenIndex) => {
+  const name = queen.name
+  const image = queen.image_url
+  const quote = queen.quote
+  const flavorText = starQuotes[queenIndex]
 ```
 
 ## Change Log
