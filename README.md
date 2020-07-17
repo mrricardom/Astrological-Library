@@ -70,7 +70,7 @@ Some potential PostMVP goals include:
 
 ## Priority Matrix
 
-[Priority Matrix](https://imgur.com/a/tDywqDp)
+[Priority Matrix](https://i.imgur.com/jOHrYoP.jpg)
 
 ## Timeframes
 
