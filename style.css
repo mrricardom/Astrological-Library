@@ -120,7 +120,7 @@ footer {
   padding-right: 10px;
 }
 
-/* Media with above of 375 */
+/* Media up to 375px */
 @media all and (max-width: 375px) {
   * {
   background-color:	#FF69B4;
@@ -182,7 +182,7 @@ body {
 
 }
 
-/* Media in between IphoneX and Iphone5/6/8 */
+/* Media inbetween IphoneX and Iphone5/6/7/8 */
 @media all and (max-width: 414px) {
   * {
   background-color:	#FF69B4;
